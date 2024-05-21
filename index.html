@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D Five Limited - Luxury Shopping</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body and Container Styling */
+        body {
+            font-family: 'Arial, sans-serif';
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        /* Header Styling */
+        header {
+            background: #222;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #FFD700 3px solid;
+        }
+
+        header .logo {
+            float: left;
+            font-size: 2em;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+        }
+
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+
+        header nav ul {
+            list-style: none;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin-left: 20px;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Hero Section Styling */
+        .hero {
+            background: url('hero.jpg') no-repeat center center/cover;
+            color: #fff;
+            padding-top: 100px;
+            min-height: 400px;
+            text-align: center;
+        }
+
+        .hero .cta-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #FFD700;
+            color: #222;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        /* About Section Styling */
+        .about {
+            padding: 50px 0;
+            background: #f4f4f4;
+            text-align: center;
+        }
+
+        .about p {
+            margin-top: 20px;
+        }
+
+        /* Products Section Styling */
+        .products {
+            padding: 50px 0;
+        }
+
+        .product-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .product-item {
+            background: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            text-align: center;
+            width: calc(33.333% - 40px);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-item img {
+            max-width: 100%;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 20px;
+        }
+
+        .product-item h3 {
+            margin: 10px 0;
+            font-size: 1.5em;
+        }
+
+        .product-item .price {
+            color: #FFD700;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .product-item .cta-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #FFD700;
+            color: #222;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        /* Services Section Styling */
+        .services {
+            padding: 50px 0;
+            background: #f4f4f4;
+            text-align: center;
+        }
+
+        /* Contact Section Styling */
+        .contact {
+            padding: 50px 0;
+        }
+
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .contact label {
+            font-weight: bold;
+        }
+
+        .contact input,
+        .contact textarea {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .contact button {
+            padding: 10px 20px;
+            background: #222;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Footer Styling */
+        footer {
+            background: #222;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        footer .social-media {
+            list-style: none;
+        }
+
+        footer .social-media li {
+            display: inline;
+            margin-left: 10px;
+        }
+
+        footer .social-media li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">D Five Limited</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <h2>Welcome to D Five Limited</h2>
+                <p>Experience luxury shopping at its finest.</p>
+                <a href="#products" class="cta-button">Shop Now</a>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>D Five Limited is your premier destination for luxury goods. We offer a curated selection of high-end fashion, accessories, and more.</p>
+            </div>
+        </section>
+
+        <section id="products" class="products">
+            <div class="container">
+                <h2>Our Products</h2>
+                <div class="product-grid">
+                    <!-- Example Product -->
+                    <div class="product-item">
+                        <img src="product1.jpg" alt="Product 1">
+                        <h3>Product Name</h3>
+                        <p>Product Description</p>
+                        <p class="price">$999.99</p>
+                        <a href="#" class="cta-button">Buy Now</a>
+                    </div>
+                    <!-- Repeat for more products -->
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <div class="container">
+                <h2>Our Services</h2>
+                <p>We offer bespoke personal shopping services, gift wrapping, and more to enhance your luxury shopping experience.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <form action="#" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 D Five Limited. All rights reserved.</p>
+            <ul class="social-media">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
